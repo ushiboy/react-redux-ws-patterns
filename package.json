@@ -1,0 +1,27 @@
+{
+  "name": "redux-ws-pattern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build_stored": "browserify -t babelify app/src-app-on-stored-ws-pattern.js -o app/app.js",
+    "build_componented": "browserify -t babelify app/src-app-on-componented-ws-pattern.js -o app/app.js",
+    "serve": "node serve.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2",
+    "react-redux": "^4.0.0",
+    "redux": "^3.0.4",
+    "redux-thunk": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel": "^5.8.34",
+    "babelify": "^6.4.0",
+    "browserify": "^12.0.1",
+    "express": "^4.13.3",
+    "express-ws": "^0.2.6"
+  }
+}
